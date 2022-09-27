@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --body-bg-color: #5e1b18;
+  --container-bg-color: #091622;
+  --hero-text-color: #eb4e49;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  font-family: "Signika", sans-serif;
+  width: 1200px;
+  height: 800px;
+  border-radius: 50px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 15px 3px black;
+}
+
+/* ---------- HERO ---------- */
+
+.hero-image {
+  background-image: url("./images/nathan-lindahl-1j18807_ul0-unsplash.jpg");
+  height: 800px;
+  width: 35%;
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  color: var(--hero-text-color);
+  font-size: 6rem;
+  font-weight: 400;
+  text-shadow: 0 0 6px #000;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#logo-text {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.521);
+  background-color: rgba(0, 0, 0, 0.089);
+  padding: 0 20px 0 20px;
+  border-radius: 200px;
+}
+
+/* ---------- FORM ---------- */
+
+.form-container {
+  /* border: 2px solid red; */
+  width: 65%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-bg-color);
+  color: #fff;
+  z-index: 2;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  padding-left: 60px;
+  padding-right: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  height: 30%;
+  padding-top: 70px;
+}
+
+.header h2 {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.form {
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  background-color: #081420;
+  box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.233);
+}
+
+.form h2 {
+  color: var(--hero-text-color);
+  font-size: 30px;
+  padding-top: 1rem;
+  padding-bottom: 1.3rem;
+}
+
+form {
+  display: flex;
+  gap: 4rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding-bottom: 1rem;
+}
+
+label {
+  font-size: small;
+  letter-spacing: 0.1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: px solid gray;
+  border-radius: 5px;
+  font-family: "Signika", sans-serif;
+  font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 2px 1px rgb(39, 39, 247);
+}
+
+/* ---------- ACTION ---------- */
+
+.action {
+  height: 30%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* align-items: center; */
+  padding-top: 30px;
+}
+
+.create-acc-btn {
+  width: 220px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--hero-text-color);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.create-acc-btn:hover {
+  transform: scale(1.05);
+}
+
+#login {
+    text-decoration: none;
+    color: var(--hero-text-color);
+    font-weight: 700;
+}
